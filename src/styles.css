@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Princess+Sofia');
+@import url('https://fonts.googleapis.com/css?family=Lateef');
+
+html{
+    background-color: black;
+    color: #bcbcb8;
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: -1;
+    font-family: 'Lateef', Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    margin:0;
+    font-family: 'Princess Sofia', cursive;
+    font-weight: normal;
+    font-size: 45px;
+    position: relative;
+    z-index: 4;
+}
+h2 {
+    position: relative;
+    z-index: 4;
+
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color: #bcbcb8;
+}

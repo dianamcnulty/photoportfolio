@@ -1,0 +1,23 @@
+.header {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 3;
+    width: 300px;
+    height: 100px;
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+}
+#logo{
+    transform: rotate(-7deg);
+    width: 270px;
+    position: relative;
+    top: -7px;
+    right: 10px;
+}
+#subtitle {
+    position: relative;
+    top: -27px;
+    left: 60px;
+    width: 155px;
+}

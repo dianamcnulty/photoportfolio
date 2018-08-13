@@ -1,0 +1,53 @@
+<div class="grid-page">
+
+  <div class="logo-space"></div>
+
+  <a class="link-1 link-box" routerLink="/bio">
+    <img class="image-link" src="assets/images/about.jpg">
+    <div class="dimmed">
+    <h3 class="link-text">About Diana</h3>
+    </div>
+  </a>
+  <div class="link-2 link-box" (click)='updateCategory("small-wonders")' routerLink="/categories/small-wonders">
+    <img class="image-link" src="assets/images/small5.jpg" >
+    <div class="dimmed" routerLink="/categories/small-wonders">
+    <h3 class="link-text" routerLink="/categories/small-wonders">Small Wonders</h3>
+    </div>
+  </div>
+  <a class="link-3 link-box" (click)='updateCategory("adventure")' routerLink="/categories/adventure">
+    <img class="image-link" src="assets/images/adventure1.jpg">
+    <div class="dimmed">
+    <h3 class="link-text">Adventure</h3>
+    </div>
+  </a>
+  <a class="link-4 link-box" (click)='updateCategory("serenity")' routerLink="/categories/serenity">
+    <img class="image-link" src="assets/images/serenity1.jpg">
+    <div class="dimmed">
+    <h3 class="link-text">Serenity</h3>
+    </div>
+  </a>
+
+
+  <div class="lrg-img-box">
+    <p *ngIf="spotLight" class="caption">{{spotLight["title"]}}</p>
+    <img *ngIf="spotLight" class="lrg-img" src={{spotLight.location}}>
+
+
+  <!--<img *ngIf="spotLight" class="lrg-img" src="{{spotLight["location"]}}">-->
+  
+  </div>
+  <section id="cat-carousel" class="cat-carousel">
+    <div class="arrow-container-left" (click)='scrollLeft()'>
+      <img id='scroll-left' class='scroll-arrow' src='assets/images/left.png'>
+    </div>
+    <img *ngFor="let photo of photoSubset" id="photo-{{photo.order}}" class='thumb' src={{photo.location}} alt={photo.altText} (click)="changePlaces($event)">
+
+    <div class="arrow-container-right" (click)='scrollRight()'>
+      <img id='scroll-right' class='scroll-arrow' src='assets/images/right.png'>
+    </div>
+
+
+
+  </section>
+
+</div>

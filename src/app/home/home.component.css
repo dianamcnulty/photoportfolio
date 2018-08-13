@@ -1,0 +1,104 @@
+.home-carousel{
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top:0;
+  z-index: 1;
+  overflow:hidden;
+}
+.rg-image-wrapper{
+	position:relative;
+	padding:0;
+	background:transparent;
+  border: 1px black solid;
+	min-height:20px;
+  height: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width:100%;
+  scroll-behavior: smooth;
+}
+.slide-show{
+  height: 100vh;
+  display:inline;
+  overflow: hidden;
+}
+.arrow-container-left{
+    background-color: rgba(0,0,0,0.5);
+    width: 5%;
+    position: absolute;
+    height: 80px;
+    top: 50%;
+    display: inline-block;
+    left: 5px;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.arrow-container-right{
+  background-color: rgba(0,0,0,0.5);
+  width: 5%;
+  position: absolute;
+  height: 80px;
+  top: 50%;
+  display: inline-block;
+  border-radius: 100%;
+  text-align: center;
+  right: 5px;
+  cursor: pointer;
+}
+.scroll-arrow {
+  height: 100%
+}
+
+.rg-image-nav a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:#000;
+	width:28px;
+	height:100%;
+	text-indent:-9000px;
+	cursor:pointer;
+	opacity:0.3;
+	outline:none;
+}
+
+.rg-image-nav a.rg-image-nav-next{
+	right:0px;
+	left:auto;
+	background-position:115% 50%;
+}
+
+.rg-image-nav a:hover{
+	opacity:0.8;
+}
+@media screen and (max-width: 510px) {
+  .rg-image-wrapper{
+    max-width: 100%;
+    margin:auto;
+  }
+  .scroll-arrow{
+    display: none;
+  }
+}
+.home-buttons-box {
+  width:70%;
+  position: absolute;
+  bottom:0px;
+  display: flex;
+  justify-content: space-around;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.home-button {
+  background-color: rgba(0,0,0,0.5);
+  display: inline-block;
+    padding: 5px 25px;
+    border-radius: 50%;
+    margin: 25px;
+    width: 20%;
+    text-align: center;
+}

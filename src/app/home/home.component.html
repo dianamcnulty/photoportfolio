@@ -1,0 +1,19 @@
+<div class='home-carousel'>
+  <div class="rg-image-wrapper" id="image-house">
+    <div  class="rg-image-nav" >
+      <img *ngFor="let photo of photoData" class='slide-show' alt='{{photo.altText}}'
+        src='{{photo["location"]}}' id="{{photo.category}}-{{photo.order}}">
+    </div>
+  </div>
+  <div class="arrow-container-left" (click)='scrollLeft()'>
+   <img id='scroll-left' class='scroll-arrow' src='assets/images/left.png'>
+  </div>
+  <div class="arrow-container-right"  (click)='scrollRight()'>
+    <img id='scroll-right' class='scroll-arrow' src='assets/images/right.png'>
+  </div>
+</div>
+<div class="home-buttons-box">
+  <h2 class="home-button" routerLink="/categories/adventure">Adventures</h2>
+  <h2 class="home-button" routerLink="/categories/serenity">Serenities</h2>
+  <h2 class="home-button" routerLink="/categories/small-wonders">Small Wonders</h2>
+</div>
